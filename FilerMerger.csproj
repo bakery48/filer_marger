@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>FilerMerger</AssemblyName>
+    <RootNamespace>FilerMerger</RootNamespace>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+    <!-- 単一ファイルとして発行: dotnet publish -r win-x64 -c Release --self-contained false -->
+    <!-- 自己完結版: dotnet publish -r win-x64 -c Release --self-contained true --p:IncludeNativeLibrariesForSelfExtract=true -->
+  </PropertyGroup>
+</Project>
